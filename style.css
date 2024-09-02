@@ -714,48 +714,129 @@ cursor: pointer;
 
 }
 
-@media (width < 650px)
+@media (max-width: 600px)
  {
-    .header{
-        height: 40px;
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+    }
+    .fa-solid fa-bars{
+        font-size: 2rem;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+    .fphoto{
+        justify-content: center;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+    .Robert{
+        padding-top: 30px;
+        padding-left: 70px;
+        line-height:0.5;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+ h1 .h{
+    font-size: 40px;
+ }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+    
+    ul li a{
+        font-size: 1.25rem;
+    }
+    
+    }
+    #check{
+        color: white;
+    }
+    
+    .checkbox:checked + .navbar ul {
+        display: flex;
+    }
+    
+    .top {
         
+        align-items: center;
+        line-height: 25px;
+        padding: 1rem;
+        gap: 3;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+
+    .Mid {
+        padding: 1rem;
+    }
+.sphoto{
+    padding: 50px;
+    flex-wrap:wrap-reverse;
+}
+.butt{
+    flex-direction: column;
+}
+.Midtop{
+    padding-top: 500px;
+    align-self: auto;
+    padding-left: 0;
+    display: inline-block;
+}
+.services{
+    align-items: center;
+    width: 100%;
+    padding-top: 1400px;
+}
+    .sbox {
+
+        max-width: none;
+        margin-bottom: 1rem;
     }
 
 
-   body{
-    flex-direction: column;
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-   }
-   .header{
-    grid-template-rows: auto;
-   }
-   .fa-solid fa-bars{
-    background-color: #000;
-    color: black;
-    font-size: 30px;
+    .icon {
+        margin-bottom: 1rem;
+    }
 
-}
-  
-ul{
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-}
+    .navbar ul {
+        gap: 0.5rem;
+    }
 
-nav #check:checked ~ ul {
-    left: 0;
-}
+    .top h1 {
+        font-size: 1.5rem;
+    }
 
-ul li a{
-    font-size: 1.25rem;
-}
+    .topbutton button {
+        padding: 0.5rem;
+    }
 
-}
-#check{
-    color: white;
+    .services .Es {
+        font-size: 1.5rem;
+    }
+
+    .boxes {
+        gap: 1rem;
+    }
 }
