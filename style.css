@@ -714,7 +714,7 @@ cursor: pointer;
 
 }
 
-@media (max-width: 600px)
+@media only screen and (max-width: 600px)
  {
     .navbar ul {
         flex-direction: column;
@@ -793,9 +793,7 @@ cursor: pointer;
     flex-direction: column;
 }
 .Midtop{
-    padding-top: 500px;
-    align-self: auto;
-    padding-left: 0;
+   
     display: inline-block;
 }
 .services{
