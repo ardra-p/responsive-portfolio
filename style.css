@@ -19,7 +19,9 @@ align-items: center;
 z-index: 100;
 }
 body{
+    overflow-y: scroll;
     overflow-x: hidden;
+    max-width: 100%;
 }
 .navbar{
     color: #333;
@@ -307,7 +309,6 @@ line-height: 50px; /* 100% */
 }
 .services{
     text-align: center;
-    padding-top: 400px;
 }
 .we{
     color: #222;
@@ -485,6 +486,7 @@ gap: 15px;
 .imag{
 background-color: white;
 border-radius: 15px;
+padding-left: 70px;
 
 }
 .test{
@@ -853,6 +855,10 @@ left: 300px;
         color: #000;
 
     }
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -897,6 +903,10 @@ left: 300px;
     .cv img {
         width: 12px; /* Adjust size of image inside button */
         height: 12px;
+    }
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
     }
 }
 
@@ -950,6 +960,10 @@ left: 300px;
         padding-left: 10px; /* Adjust padding */
         text-align: center; /* Center align text and images */
     }
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
 }
 @media (max-width: 500px) {
     .services {
@@ -990,6 +1004,10 @@ left: 300px;
     .arrow {
         width: 30px; /* Adjust arrow size */
         height: 10px; /* Adjust arrow size */
+    }
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
     }
 }
 
@@ -1153,6 +1171,10 @@ left: 300px;
     width: 652px; /* Consider adjusting or removing for responsiveness */
     height: 85px; /* Consider adjusting or removing for responsiveness */
 }
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
 /* Responsive Styles */
 @media (max-width: 500px) {
@@ -1190,6 +1212,10 @@ left: 300px;
 
     .skil {
         font-size: 22px; /* Adjust font size for smaller screens */
+    }
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
     }
 }
 
@@ -1280,6 +1306,10 @@ left: 300px;
 
     .projec {
         padding-top: 900px; /* Reduced padding for smaller screens */
+    }
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
     }
     @media (max-width: 600px) {
         .the {
@@ -1449,6 +1479,12 @@ left: 300px;
         .co{
             padding-bottom:40px;
         }
+
+        html, body{
+            overflow-x: hidden;
+            max-width: 100%;
+        }
     }
 
+    
     
