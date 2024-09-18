@@ -1302,6 +1302,8 @@ html, body{
     .imag img {
         max-width: 100%; /* Ensure images fit within container */
         height: auto; /* Maintain aspect ratio */
+        position: relative;
+       right: 120px;
     }
 
     .projec {
